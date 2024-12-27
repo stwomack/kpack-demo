@@ -1,0 +1,17 @@
+apiVersion: kpack.io/v1alpha2
+kind: Builder
+metadata:
+  name: main-builder
+  namespace: default
+spec:
+  serviceAccountName: mdb-service-account
+  tag: stwomack/builder
+  stack:
+    name: base
+    kind: ClusterStack
+  store:
+    name: default
+    kind: ClusterStore
+  order:
+  - group:
+    - id: paketo-buildpacks/java
