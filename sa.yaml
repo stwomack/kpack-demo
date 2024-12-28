@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: mdb-service-account
+  name: main-builder-service-account
   namespace: default
 secrets:
-- name: mdb-credentials
+- name: womack-registry-credentials
 imagePullSecrets:
-- name: mdb-credentials
+- name: womack-registry-credentials

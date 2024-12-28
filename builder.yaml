@@ -4,7 +4,7 @@ metadata:
   name: main-builder
   namespace: default
 spec:
-  serviceAccountName: mdb-service-account
+  serviceAccountName: main-builder-service-account
   tag: stwomack/builder
   stack:
     name: base
@@ -15,3 +15,5 @@ spec:
   order:
   - group:
     - id: paketo-buildpacks/java
+  - group:
+      - id: paketo-buildpacks/nodejs
