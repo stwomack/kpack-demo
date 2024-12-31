@@ -1,7 +1,7 @@
 apiVersion: kpack.io/v1alpha2
 kind: ClusterStack
 metadata:
-  name: base
+  name: main-clusterstack
 spec:
   id: "io.buildpacks.stacks.jammy"
   buildImage:

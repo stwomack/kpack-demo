@@ -7,10 +7,10 @@ spec:
   serviceAccountName: main-builder-service-account
   tag: stwomack/builder
   stack:
-    name: base
+    name: main-clusterstack
     kind: ClusterStack
   store:
-    name: default
+    name: main-clusterstore
     kind: ClusterStore
   order:
   - group:
