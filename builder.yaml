@@ -4,14 +4,16 @@ metadata:
   name: main-builder
   namespace: default
 spec:
-  serviceAccountName: mdb-service-account
+  serviceAccountName: main-builder-service-account
   tag: stwomack/builder
   stack:
-    name: base
+    name: main-clusterstack
     kind: ClusterStack
   store:
-    name: default
+    name: main-clusterstore
     kind: ClusterStore
   order:
   - group:
     - id: paketo-buildpacks/java
+  - group:
+      - id: paketo-buildpacks/nodejs
