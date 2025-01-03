@@ -4,3 +4,4 @@ kp-darwin-amd64-0.13.0
 release-0.15.0.yaml
 .idea/
 kpack.iml
+builder.backup.yaml
