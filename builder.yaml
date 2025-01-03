@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   serviceAccountName: main-builder-service-account
-  tag: stwomack/builder
+  tag: stwomack/kpack-builder
   stack:
     name: main-clusterstack
     kind: ClusterStack
@@ -17,5 +17,3 @@ spec:
         - id: paketo-buildpacks/java
     - group:
         - id: paketo-buildpacks/nodejs
-    - group:
-        - id: paketo-buildpacks/npm-install
