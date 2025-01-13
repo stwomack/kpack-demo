@@ -5,5 +5,3 @@ metadata:
 spec:
   sources:
     - image: gcr.io/paketo-buildpacks/java
-    - image: gcr.io/paketo-buildpacks/nodejs
-    - image: paketo-buildpacks/npm-install

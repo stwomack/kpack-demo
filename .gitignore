@@ -1,4 +1,4 @@
-db-secret.sh
+db-secrets.sh
 registry.sh
 kp-darwin-amd64-0.13.0
 release-0.15.0.yaml
