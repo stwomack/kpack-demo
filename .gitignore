@@ -5,3 +5,4 @@ release-0.15.0.yaml
 .idea/
 kpack.iml
 builder.backup.yaml
+db-secrets.sh
